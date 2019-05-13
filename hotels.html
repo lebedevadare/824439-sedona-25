@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона гостиницы</title>
+</head>
+<body>
+<header class="main-header">
+  <nav class="main-navigation">
+    <ul class="site-navigation">
+      <li><a href="info.html">Информация</a></li>
+      <li><a href="photo.html">Фото и видео</a></li>
+      <a href="#"> <img class="logo" src="img/index-logo.svg" width="140" height="72" alt="Логотип сайта «Седона»"></a>
+    </ul>
+    <ul class="maps-navigation">
+      <li><a href="maps.html">Карта штата</a></li>
+      <li><a href="hotels.html">Гостиницы</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="main-catalog">
+  <section class="filter-hotel">
+    <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-info">
+        <legend>Инфраструктура</legend>
+        <ul class="filter-infrastructure">
+          <li class="filter-option">
+            <input class="visually-hidden" type="checkbox" name="pool"
+                   id="pool" checked>
+            <label for="pool">Бассейн</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden" type="checkbox" name="parking"
+                   id="parking">
+            <label for="parking">Парковка</label>
+          </li>
+          <li class="filter-option">
+
+            <input class="visually-hidden" type="checkbox" name="wifi"
+                   id="wifi" checked>
+            <label for="wifi">Wi-fi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="filter-house">
+        <legend>Тип жилья</legend>
+        <ul class="filter-house">
+          <li class="filter-option">
+            <input class="visually-hidden" type="checkbox" name="hostelry"
+                   id="hostelry">
+            <label for="hostelry">Гостиница</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden" type="checkbox" name="hotel"
+                   id="hotel">
+            <label for="hotel">Мотель</label>
+          </li>
+          <li class="filter-option">
+
+            <input class="visually-hidden" type="checkbox" name="apartments"
+                   id="apartments" checked>
+            <label for="apartments">Аппартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <h3>Стоимость в сутки</h3>
+    <div class="price">
+      <span>от 0</span><span>до 3000</span>
+    </div>
+    <div class="range-controls">
+      <div class="scale">
+        <div class="bar"></div>
+        <div class="toggle min-toggle"></div>
+        <div class="toggle max-toggle"></div>
+      </div>
+    </div>
+    <button class="filter-show-button" type="submit">Показать</button>
+  </section>
+  <div class="catalog-sorting">
+    <span>Найдено:3</span>
+    <h3>Сортировка:</h3>
+    <p class="sort-by-price sort-current">По цене</p>
+    <p class="sort-by-type">По типу</p>
+    <p class="sort-by-functions">По рейтингу</p>
+  </div>
+  <section class="hotels">
+    <div>
+      <img src="">
+      <h3>Аmara resort&spa</h3>
+      <p>Гостиница от 4000p</p>
+      <a href="#">Подробнее</a>
+      <button class="reservation" type="submit">Забронировать</button>
+      <span>Рейтинг:8,5</span>
+    </div>
+     <div>
+      <img src="">
+      <h3>Desert Quail inn</h3>
+      <p>Мотель от 3000p</p>
+      <a href="#">Подробнее</a>
+      <button class="reservation" type="submit">Забронировать</button>
+       <span>Рейтинг:8,9</span>
+    </div>
+     <div>
+      <img src="">
+      <h3>Villas at Poco Diablo</h3>
+      <p>Аппартаменты от 2000p</p>
+      <a href="#">Подробнее</a>
+      <button class="reservation" type="submit">Забронировать</button>
+       <span>Рейтинг:9,2</span>
+    </div>
+  </section>
+</main>
+<footer class="main-footer">
+  <span>#visitsedona</span>
+  <div class="footer-social">
+    <a class="social-button" href="#">Вконтакте</a>
+    <a class="social-button" href="#">Фейсбук</a>
+    <a class="social-button" href="#">Инстаграм</a>
+  </div>
+  <span>website by</span><img src="" width="" height="" alt="">
+</footer>
+</body>
+</html>
