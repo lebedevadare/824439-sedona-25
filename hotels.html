@@ -7,13 +7,14 @@
 <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="logo" href="index.html"> <img src="img/index-logo.svg" width="140" height="72"
-                                            alt="Логотип сайта «Седона»"></a>
+    <a class="logo" href="index.html">
+      <img src="img/index-logo.svg" width="140" height="72" alt="Логотип сайта «Седона»">
+    </a>
     <ul class="site-navigation">
       <li><a href="info.html">Информация</a></li>
       <li><a href="photo.html">Фото и видео</a></li>
       <li><a href="maps.html">Карта штата</a></li>
-      <li><a>Гостиницы</a></li>
+      <li><a class="current">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -63,6 +64,7 @@
           </li>
         </ul>
       </fieldset>
+      <fieldset class="cost">
       <h2>Стоимость в сутки</h2>
       <div class="price-controls">
         <input class="price-min" type="text" name="price-min" value="0">
@@ -76,14 +78,15 @@
         </div>
       </div>
       <button class="filter-show-button" type="submit">Показать</button>
+      </fieldset>
     </form>
   </section>
   <div class="catalog-sorting">
     <span>Найдено:3</span>
-    <h2>Сортировка:</h2>
-    <a class="sort-by-price sort-current" href="">По цене</a>
-    <a class="sort-by-type" href="">По типу</a>
-    <a class="sort-by-functions" href="">По рейтингу</a>
+    <p>Сортировка:</p>
+    <a class="sort-by-price current" href="#">По цене</a>
+    <a class="sort-by-type" href="#">По типу</a>
+    <a class="sort-by-functions" href="#">По рейтингу</a>
   </div>
   <section class="result">
     <div class="result-item">
@@ -119,7 +122,8 @@
     <a class="social-button" href="#">Фейсбук</a>
     <a class="social-button" href="#">Инстаграм</a>
   </div>
-  <p><a class="button" href="https://htmlacademy.ru" target="blank"> website by<img src="" width="" height="" alt=""></a></p>
+  <p><a class="button" href="https://up.htmlacademy.ru/htmlcss" target="_blank"> website by<img src="" width="" height=""
+                                                                                    alt=""></a></p>
 </footer>
 </body>
 </html>
