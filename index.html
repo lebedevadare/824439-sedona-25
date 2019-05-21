@@ -100,7 +100,33 @@
 </footer>
 <section class="modal modal-search">
   <h2>Поиск гостиниц в Седоне</h2>
-  <!-- Здесь будет форма-->
+  <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+    <p class="search-item">
+      <label for="arrival">Дата заезда</label>
+      <input class="visually-hidden" type="text" name="arrival" id="arrival" placeholder="27 апреля 2017" >
+      <button class="calendar" type="submit" aria-label="Календарь"></button>
+    </p>
+    <p class="search-item">
+      <label for="left">Дата выезда</label>
+      <input class="visually-hidden" type="text" name="left" id="left" placeholder="4 июля 2017" >
+      <button class="calendar" type="submit" aria-label="Календарь"></button>
+    </p>
+    <p class="search-item">
+      <label for="left">Взрослые</label>
+      <input class="visually-hidden" type="text" name="adults" id="adults" >
+      <button class="less" type="button">Уменьшить</button>
+      <span>2</span>
+      <button class="more" type="button">Увеличить</button>
+    </p>
+     <p class="search-item">
+      <label for="children">Дети</label>
+      <input class="visually-hidden" type="text" name="children" id="children" >
+      <button class="less" type="button">Уменьшить</button>
+      <span>0</span>
+      <button class="more" type="button">Увеличить</button>
+    </p>
+    <button class="search-button" type="submit"Отправить></button>
+  </form>
 </section>
 </body>
 </html>
