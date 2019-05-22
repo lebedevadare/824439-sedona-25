@@ -25,10 +25,11 @@
     <h2 class="headline">Седона - небольшой городок в Аризоне,
       заслуживающий большего
     </h2>
-    <p class="">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+
   </section>
   <section class="features">
     <h2 class="visually-hidden">Почему стоит приехать в Седону</h2>
+    <p class="cause">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
     <ul class="features-list">
       <li class="features-item">
         <div class="info">
@@ -39,20 +40,22 @@
         <div class="image-wrap">
           <img src="img/cafe.jpg" width="800" height="256" alt="Изображение кафе в Седоне">
         </div>
+        <ul class="advantages">
+          <li class="advantages-item">
+            <p class="title">Жилье</p>
+            <p class="content">Рекомендуем пожить в настоящем мотеле,все как в кино</p>
+          </li>
+          <li class="advantages-item">
+            <p class="title">Еда</p>
+            <p class="content">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+          </li>
+          <li class="advantages-item">
+            <p class="title">Cувениры</p>
+            <p class="content">Не только китайского, но и местного производства</p>
+          </li>
+        </ul>
       </li>
-      <li class="advantages-item">
-        <p class="title">Жилье</p>
-        <p class="content">Рекомендуем пожить в настоящем мотеле,все как в кино</p>
-      </li>
-      <li class="advantages-item">
-        <p class="title">Еда</p>
-        <p class="content">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
-      </li>
-      <li class="advantages-item">
-        <p class="title">Cувениры</p>
-        <p class="content">Не только китайского, но и местного производства</p>
-      </li>
-      <li class="attractions features-item">
+      <li class="features-item reverse">
         <div class="info">
           <p class="heading">Там есть<br> мост дьявола</p>
           <span>№2</span>
@@ -81,6 +84,34 @@
   </section>
   <b>Заинтерисовались?</b>
   <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+  <section class="modal-search">
+  <button class="search" type="button">Поиск гостиниц в Седоне</button>
+  <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+    <p class="search-item">
+      <label for="arrival">Дата заезда</label>
+      <input class="visually-hidden" type="text" name="arrival" id="arrival" placeholder="27 апреля 2017">
+      <button class="calendar" type="button" aria-label="Календарь"><span class="visually-hidden">Календарь</span> </button>
+    </p>
+    <p class="search-item">
+      <label for="left">Дата выезда</label>
+      <input class="visually-hidden" type="text" name="left" id="left" placeholder="4 июля 2017">
+      <button class="calendar" type="button" aria-label="Календарь"><span class="visually-hidden">Календарь</span></button>
+    </p>
+    <p class="search-item adults">
+      <label for="adults">Взрослые</label>
+      <button class="less" type="button">Уменьшить</button>
+      <input type="text" name="adults" id="adults" placeholder="2">
+      <button class="more" type="button">Увеличить</button>
+    </p>
+    <p class="search-item children">
+      <label for="children">Дети</label>
+      <button class="less" type="button">Уменьшить</button>
+      <input type="text" name="adults" id="children" placeholder="0">
+      <button class="more" type="button">Увеличить</button>
+    </p>
+    <button class="search-button" type="submit" >Отправить</button>
+  </form>
+</section>
   <aside class="location">
     <img class="map" src="img/map.jpg" width="1718" height="748" alt="Карта окрестностей Седоны">
   </aside>
@@ -93,14 +124,11 @@
     <a class="social-button" href="#">Инстаграм</a>
   </div>
   <p>
-    <a class="button" href="https://up.htmlacademy.ru/htmlcss" target="_blank"> website by<img src="" width="" height=""
-                                                                                               alt="">
+    <a class="button-academy" href="https://up.htmlacademy.ru/htmlcss" target="_blank"> website by<img src="img/logo_name" width="115" height="41"
+                                                                                               alt="Логотип HTML-academy">
     </a>
   </p>
 </footer>
-<section class="modal modal-search">
-  <h2>Поиск гостиниц в Седоне</h2>
-  <!-- Здесь будет форма-->
-</section>
+
 </body>
 </html>

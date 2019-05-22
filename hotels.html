@@ -66,53 +66,71 @@
         </ul>
       </fieldset>
       <fieldset class="cost">
-      <h2>Стоимость в сутки</h2>
-      <div class="price-controls">
-        <input class="price-min" type="text" name="price-min" value="0">
-        <input class="price-max" type="text" name="price-max" value="3000">
-      </div>
-      <div class="range-controls">
-        <div class="scale">
-          <div class="bar"></div>
-          <div class="toggle min-toggle"></div>
-          <div class="toggle max-toggle"></div>
+        <h2>Стоимость в сутки</h2>
+        <div class="price-controls">
+          <input class="price-min" type="text" name="price-min" value="0">
+          <input class="price-max" type="text" name="price-max" value="3000">
         </div>
-      </div>
-      <button class="filter-show-button" type="submit">Показать</button>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+        </div>
+        <button class="filter-show-button" type="submit">Показать</button>
       </fieldset>
     </form>
   </section>
   <div class="catalog-sorting">
-    <span>Найдено:3</span>
+    <p class="search-number">Найдено:<span>3</span></p>
     <p>Сортировка:</p>
-    <a class="sort-by-price current" href="#">По цене</a>
-    <a class="sort-by-type" href="#">По типу</a>
-    <a class="sort-by-functions" href="#">По рейтингу</a>
+    <ul class="sorting-list">
+      <li><a class="sort-by-price current" href="#">По цене</a></li>
+      <li><a class="sort-by-type" href="#">По типу</a></li>
+      <li><a class="sort-by-functions" href="#">По рейтингу</a></li>
+    </ul>
+    <div class="arrows">
+      <button class="above" type="button"><span class="visually-hidden">Наверх</span></button>
+      <button class="down" type="button"><span class="visually-hidden">Вниз</span></button>
+    </div>
   </div>
   <section class="result">
     <div class="result-item">
-      <img class="image-hotel" src="img/hotel-1.jpg" width="135" height="90" alt="Изображение гомтиницы">
-      <a><h3>Аmara resort&spa</h3></a>
-      <p>Гостиница от 4000p</p>
-      <a href="#">Подробнее</a>
-      <a class="reservation" href="">Забронировать</a>
-      <span>Рейтинг:8,5</span>
+      <img class="image-hotel" src="img/hotel-1.jpg" width="135" height="90" alt="Изображение гоcтиницы">
+      <div class="info-hotel">
+        <a><h3>Аmara resort&spa</h3></a>
+        <p>Гостиница от 4000p</p>
+        <a href="#">Подробнее</a>
+        <a class="reservation" href="">Забронировать</a>
+      </div>
+      <div class="rating">
+        <span>Рейтинг:8,5</span>
+      </div>
     </div>
     <div class="result-item">
       <img class="image-hotel" src="img/hotel-2.jpg" width="135" height="90" alt="Изображение гостиницы">
-      <a><h3>Desert Quail inn</h3></a>
-      <p>Мотель от 3000p</p>
-      <a href="#">Подробнее</a>
-      <a class="reservation" href="">Забронировать</a>
-      <span>Рейтинг:8,9</span>
+      <div class="info-hotel">
+        <a><h3>Desert Quail inn</h3></a>
+        <p>Мотель от 3000p</p>
+        <a href="#">Подробнее</a>
+        <a class="reservation" href="">Забронировать</a>
+      </div>
+      <div class="rating">
+        <span>Рейтинг:8,9</span>
+      </div>
     </div>
     <div class="result-item">
-      <img class="image-hotel" src="img/hotel-3.jpg" width="135" height="90">
-      <a><h3>Villas at Poco Diablo</h3></a>
-      <p>Аппартаменты от 2000p</p>
-      <a href="#">Подробнее</a>
-      <a class="reservation" href="">Забронировать</a>
-      <span>Рейтинг:9,2</span>
+      <img class="image-hotel" src="img/hotel-3.jpg" width="135" height="90" alt="Изображение гостиницы">
+      <div class="info-hotel">
+        <a><h3>Villas at Poco Diablo</h3></a>
+        <p>Аппартаменты от 2000p</p>
+        <a href="#">Подробнее</a>
+        <a class="reservation" href="">Забронировать</a>
+      </div>
+      <div class="rating">
+        <span>Рейтинг:9,2</span>
+      </div>
     </div>
   </section>
 </main>
@@ -123,8 +141,12 @@
     <a class="social-button" href="#">Фейсбук</a>
     <a class="social-button" href="#">Инстаграм</a>
   </div>
-  <p><a class="button" href="https://up.htmlacademy.ru/htmlcss" target="_blank"> website by<img src="" width="" height=""
-                                                                                    alt=""></a></p>
+  <p>
+    <a class="button" href="https://up.htmlacademy.ru/htmlcss" target="_blank"> website by<img src="img/logo_name"
+                                                                                               width="115" height="41"
+                                                                                               alt="Логотип HTML-academy">
+    </a>
+  </p>
 </footer>
 </body>
 </html>
