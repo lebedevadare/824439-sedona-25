@@ -11,11 +11,13 @@
 <div class="page-wrapper">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="logo"> <img src="img/logo.svg" width="140" height="72" alt="Логотип сайта «Седона»"></a>
+      <a class="logo-header"> <img src="img/logo.svg" width="140" height="72"
+                                   alt="Логотип сайта «Седона»">
+      </a>
       <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="photo.html">Фото и видео</a></li>
-        <li><a href="maps.html">Карта штата</a></li>
+        <li class="item-navigation"><a href="info.html">Информация</a></li>
+        <li class="item-navigation"><a href="photo.html">Фото и видео</a></li>
+        <li class="item-navigation"><a href="maps.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
@@ -24,7 +26,7 @@
     <section class="promo">
       <h1 class="visually-hidden">О городе Седона</h1>
       <div class="welcome">
-        <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+        <img class="picture" src="img/welcome.svg" width="800" height="256" alt="Добро пожаловать в Седону">
       </div>
       <h2 class="headline">Седона - небольшой городок в Аризоне,
         заслуживающий большего
@@ -41,19 +43,19 @@
             <p class="description content">Седона - не атракцион для туристов,там течет своя жизнь</p>
           </div>
           <div class="image-wrap">
-            <img src="img/cafe.jpg" width="800" height="256" alt="Изображение кафе в Седоне">
+            <img class="img" src="img/cafe.jpg" width="800" height="256" alt="Изображение кафе в Седоне">
           </div>
           <ul class="advantages">
             <li class="features-item advantages-item">
-              <p class="title">Жилье</p>
+              <p class="title-items">Жилье</p>
               <p class="content">Рекомендуем пожить в настоящем мотеле,все как в кино</p>
             </li>
             <li class="features-item advantages-item">
-              <p class="title">Еда</p>
+              <p class="title-items">Еда</p>
               <p class="content">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
             </li>
             <li class="features-item advantages-item">
-              <p class="title">Cувениры</p>
+              <p class="title-items">Cувениры</p>
               <p class="content">Не только китайского, но и местного производства</p>
             </li>
           </ul>
@@ -65,23 +67,29 @@
             <p class="description content">Да, по нему можно пройтись, если вы осмелитесь</p>
           </div>
           <div class="image-wrap">
-            <img src="img/mountain.jpg" width="800" height="256" alt="Изображение горного пейзажа в Седоне">
+            <img class="img" src="img/mountain.jpg" width="800" height="256" alt="Изображение горного пейзажа в Седоне">
           </div>
         </li>
         <li class="attractions-item features-item ">
-          <p class="title">Небольшая площадь</p>
-          <span class="number">№3</span>
-          <p class="content">Все достопримечательности находяться очень близко</p>
+          <div class="info-white">
+            <p class="title">Небольшая площадь</p>
+            <span class="number">№3</span>
+            <p class="content">Все достопримечательности находяться очень близко</p>
+          </div>
         </li>
         <li class="attractions-item features-item">
-          <p class="title">Красивая дорога</p>
-          <span class="number">№4</span>
-          <p class="content">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          <div class="info-white">
+            <p class="title">Красивая дорога</p>
+            <span class="number">№4</span>
+            <p class="content">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
         </li>
         <li class="attractions-item features-item">
-          <p class="title">Мало туристов</p>
-          <span class="number">№5</span>
-          <p class="content">Большинство едет в Гранд Каньон и толпится там</p>
+          <div class="info-white">
+            <p class="title">Мало туристов</p>
+            <span class="number">№5</span>
+            <p class="content">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -89,8 +97,9 @@
     <p class="data">Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
     <section class="modal-search">
       <div class="modal-wrapper">
-        <button class="search" type="button">Поиск гостиниц в Седоне</button>
+
         <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+          <button class="search" type="button">Поиск гостиниц в Седоне</button>
           <p class="search-item">
             <label class="nomination" for="arrival-data">Дата заезда</label>
             <input type="text" name="arrival" id="arrival-data" placeholder="27 апреля 2017">
@@ -124,19 +133,20 @@
     </aside>
   </main>
   <footer class="main-footer">
-    <span class="name-logo">#visitsedona</span>
-    <div class="footer-social">
-      <a class="social-button" href="#">Вконтакте</a>
-      <a class="social-button" href="#">Фейсбук</a>
-      <a class="social-button" href="#">Инстаграм</a>
+    <div class="footer-wrapper">
+      <span class="name-logo">#visitsedona</span>
+      <div class="footer-social">
+        <a class="social-button" href="#">Вконтакте</a>
+        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">Инстаграм</a>
+      </div>
+
+      <a class="button-academy" href="https://up.htmlacademy.ru/htmlcss" target="_blank"> website by<img
+        src="img/logo_name.svg"
+        width="115" height="41"
+        alt="Логотип HTML-academy">
+      </a>
     </div>
-
-    <a class="button-academy" href="https://up.htmlacademy.ru/htmlcss" target="_blank"> website by<img
-      src="img/logo_name.svg"
-      width="115" height="41"
-      alt="Логотип HTML-academy">
-    </a>
-
   </footer>
 </div>
 </body>
