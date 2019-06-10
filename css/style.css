@@ -112,10 +112,15 @@ input[type="checkbox"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.active a {
-  color: #81b3d2;
+.active a{
+  color: rgba(0,0,0,0.3);
 }
-
+.active a:hover{
+  color:rgba(0,0,0,0.3);
+}
+.active a:active{
+  color:rgba(0,0,0,0.3);
+}
 .promo {
   position: relative;
   min-height: 450px;
@@ -133,18 +138,23 @@ input[type="checkbox"].visually-hidden {
 
   position: absolute;
 
-  width: 1200px;
+  width: 100%;
   height: 59px;
 
-  top: 450px;
+  bottom:-2px;
   left: 0px;
 
-  background-image: url("../img/polygo.png");
+  background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
 
 
 }
+.image-wrap{
+  width: 800px;
+  height: 256px;
 
+  overflow: hidden;
+}
 .welcome {
   width: 459px;
   margin: 0 auto;
@@ -188,9 +198,6 @@ input[type="checkbox"].visually-hidden {
 
   width: 200px;
 }
-.close{
-  width: 259px;
-}
 .beautiful-road{
   width: 150px;
 }
@@ -208,9 +215,6 @@ input[type="checkbox"].visually-hidden {
 
   margin: 0;
   margin-bottom: 24px;
-}
-.advantages-item .depiction{
-  margin-bottom: 84px;
 }
 .housing .depiction{
   width: 252px;
@@ -266,6 +270,7 @@ input[type="checkbox"].visually-hidden {
 
   width: 400px;
   padding-top: 160px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
@@ -335,6 +340,7 @@ input[type="checkbox"].visually-hidden {
   width: 302px;
 }
 .number {
+  display: block;
   font-size: 14px;
   line-height: 1.5;
   color: #333333;
@@ -387,18 +393,6 @@ input[type="checkbox"].visually-hidden {
 
 .info-reverse span {
   color: #ffffff;
-}
-
-.info-white {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  width: 400px;
-  height: 256px;
-
-  background-color: #eeeeee;
 }
 
 .attractions-item {
@@ -455,6 +449,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-form {
+  position:absolute;
 
   width: 568px;
   min-height: 395px;
@@ -561,6 +556,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filter-range {
+  box-sizing: content-box;
+
   width: 330px;
   margin-left: auto;
 
@@ -801,8 +798,13 @@ input[type="checkbox"].visually-hidden {
 .result-item {
   display: flex;
   padding: 30px 72px;
-}
 
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+}
+.hotel-name{
+  color:#000000;
+}
 .image-hotel {
   width: 135px;
   height: 90px;
