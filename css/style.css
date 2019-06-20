@@ -1,8 +1,10 @@
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *::before, *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: inherit;
 }
 
@@ -50,7 +52,7 @@ input[type="checkbox"].visually-hidden {
   margin: 0 auto;
 
   background-color: #ffffff;
-  -webkit-box-shadow: 5px 0px 15px rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
@@ -90,7 +92,6 @@ input[type="checkbox"].visually-hidden {
   line-height: 1.86;
   font-weight: 700;
 }
-
 .item-right {
   margin-right: auto;
   text-align: right;
@@ -205,13 +206,19 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 32px;
 }
 
-.title {
+ .title {
   margin: 0;
+   margin-bottom: 15px;
   font-weight: 700;
 
-  width: 200px;
+  padding-left: 83px;
+  padding-right: 83px;
+  text-align: center;
 }
-
+.attractions-item .left-title{
+  padding-right: 65px;
+  padding-left: 65px;
+}
 .title-items {
   font-weight: 700;
 
@@ -220,15 +227,18 @@ input[type="checkbox"].visually-hidden {
 }
 
 .housing .depiction {
-  width: 252px;
+  padding-left: 65px;
+  padding-right: 65px;
 }
 
 .food .depiction {
-  width: 284px;
+  padding-right: 55px;
+  padding-left: 55px;
 }
 
 .souvenirs .depiction {
-  width: 273px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .cause {
@@ -242,18 +252,27 @@ input[type="checkbox"].visually-hidden {
 }
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
+.features-list li{
+  margin: 0;
+}
 
 .wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   text-align: center;
 }
@@ -261,6 +280,8 @@ input[type="checkbox"].visually-hidden {
 
 .advantages {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   list-style: none;
@@ -270,10 +291,19 @@ input[type="checkbox"].visually-hidden {
 }
 
 .advantages-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   width: 400px;
   padding-top: 160px;
@@ -343,24 +373,52 @@ input[type="checkbox"].visually-hidden {
 
   margin: 0;
 }
-
+.content-left{
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.content-center{
+  text-align: center;
+}
+.content-right{
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
 .description {
   width: 302px;
 }
 
 .number {
-  display: block;
+  display:inline-block;
+
+  padding-left: 107px;
+  padding-right: 107px;
+  margin-bottom: 5px;
+
   font-size: 14px;
   line-height: 1.5;
   color: #333333;
 }
 
 .info-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  order: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 
   width: 400px;
   height: 256px;
@@ -372,15 +430,26 @@ input[type="checkbox"].visually-hidden {
 }
 
 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   width: 400px;
   height: 256px;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 53px;
+  padding-left: 53px;
+  padding-top: 46px;
+  padding-bottom: 64px;
 
   background-color: #81b3d2;
   color: #ffffff;
@@ -405,12 +474,13 @@ input[type="checkbox"].visually-hidden {
 .attractions-item {
   background-color: #eeeeee;
   width: 400px;
-  padding: 50px 77px;
+  padding: 45px 75px;
 }
 
 
 .form-hotels {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   position: relative;
   text-align: center;
 
@@ -423,7 +493,7 @@ input[type="checkbox"].visually-hidden {
   line-height: 36px;
 
   margin: 0;
-  padding-top: 30px;
+  padding-top: 55px;
 
   color: #000000;
 }
@@ -786,7 +856,7 @@ button[name="show-form"]:active {
 .sea {
   width: 568px;
   height: 86px;
-  bckground-color: #503e33;
+  background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -813,9 +883,9 @@ button[name="show-form"]:active {
 }
 
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-
-
 }
 
 .filter .field-group {
@@ -859,7 +929,8 @@ button[name="show-form"]:active {
 }
 
 .filter-range {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 
   width: 330px;
   margin-left: auto;
@@ -1301,9 +1372,16 @@ a .hotel-name {
 }
 
 .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rating-number {
@@ -1330,6 +1408,7 @@ a .hotel-name {
 }
 
 .link-left {
+   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   width: 110px;
   height: 27px;
@@ -1342,10 +1421,11 @@ a .hotel-name {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
-  padding: 8px 16px;
+  padding: 4px 16px;
 }
 
 .link-right {
+   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   width: 142px;
   height: 27px;
@@ -1358,7 +1438,7 @@ a .hotel-name {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
-  padding: 8px 16px;
+  padding: 4px 16px;
 }
 
 .link-left:hover,
@@ -1391,9 +1471,15 @@ a .hotel-name {
 
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   opacity: 0.9;
 
   padding-left: 132px;
@@ -1410,21 +1496,35 @@ a .hotel-name {
 }
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 400px;
 }
 
 .footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
 }
 
 .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 152px;
   padding: 0;
   margin: 0;
@@ -1449,11 +1549,16 @@ a .hotel-name {
   background-color: #5496bd;
   fill: rgba(255, 255, 255, 0.3);
 }
-
 .social-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -1500,9 +1605,15 @@ a .hotel-name {
 }
 
 .main-footer-hotels {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   padding-left: 132px;
   padding-right: 110px;
