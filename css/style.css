@@ -107,11 +107,13 @@ input[type="checkbox"].visually-hidden {
 
 }
 
-.map-responsive {
+.map-responsive iframe{
   overflow: hidden;
   position: relative;
-  height: 748px;
-  margin-bottom: -748px;
+  height: 593px;
+  width: 1200px;
+  border:0;
+  margin-bottom: -593px;
 }
 
 
